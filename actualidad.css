@@ -1,0 +1,130 @@
+.mainActualidad {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerGalleria {
+    min-height: 70vh;
+    width: 110%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.side-left {
+    /* border: 1px solid black;       */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+
+}
+
+.first-rows {
+    display: flex;
+}
+
+.card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+.card1 {
+    background-image: url('./media/ProgresoActual_1.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+
+
+}
+
+.card2 {
+    background-image: url('./media/ProgresoActual_1.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.card3 {
+    background-image: url('./media/ProgresoActual_1.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+.card4 {
+    background-image: url('./media/ProgresoActual_1.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+
+.B {
+    flex: 2;
+
+}
+
+.A {
+    flex: 4;
+
+}
+
+
+
+.side-right {
+
+    background-size: 100% 100%;
+    /*Con esto ocupas el 100% del contenedor*/
+    background-repeat: no-repeat;
+
+
+    background-image: url('./media/ProgresoActual_2.webp');
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+
+@media (max-width: 767.98px) {
+    .containerGalleria {
+        min-height: 90vh;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+
+    .first-rows {
+        flex-direction: column;
+    }
+
+    .B {
+        flex: 1;
+    }
+
+    .A {
+        flex: 1;
+
+    }
+
+
+}
+
+
+@media (max-width: 991.98px) {
+    .containerGalleria {
+        min-height: 95vh;
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+}

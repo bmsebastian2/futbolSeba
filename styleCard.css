@@ -1,0 +1,269 @@
+.mecanografia {
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #B7DA25;
+    line-height: 0;
+}
+
+.mecanografia2 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #fbff00;
+}
+
+.mecanografia3 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1B1F2A;
+    margin: 2rem 8rem;
+
+}
+
+.cardFutbol {
+    display: flex;
+    height: 90vh;
+    min-width: 36vw;
+}
+
+.cardClubes {
+    flex: 2;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 2rem;
+
+}
+
+.escudos {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(0.1rem);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.escudo {
+    margin: 0.5rem;
+    text-align: center;
+    color: #3e4b08;
+}
+
+.escudo img {
+    width: 3rem;
+}
+
+.containerLinea {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.linea {
+    left: 1rem;
+    top: -3rem;
+    border-top: 1px solid #AAACC0;
+    height: 2px;
+    width: 11rem;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    transform: rotate(120deg);
+    position: absolute;
+}
+
+.linea2 {
+    left: -4rem;
+    top: 5rem;
+    border-top: 1px solid #AAACC0;
+    height: 2px;
+    width: 7rem;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    transform: rotate(140deg);
+    position: absolute;
+}
+
+figcaption {
+    font-family: 'Junge';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 15px; */
+}
+
+.cardImagen {
+    flex: 4;
+    background-color: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(30, 197, 11, 0.3));
+    z-index: -5;
+    position: relative;
+}
+
+.cardImagen img {
+    position: absolute;
+    z-index: 1000;
+    width: 16rem;
+}
+
+.cardName {
+    flex: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 2rem;
+}
+
+.cardNameHeader {
+    flex: 2;
+    background-color: #1B1F2A;
+    border-bottom-right-radius: 2rem;
+}
+
+.cardNameHeader p {
+    writing-mode: vertical-lr;
+    font-size: 2.2rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    color: #fefefe;
+    margin: 2rem;
+}
+
+.cardNameHeader h4 {
+    font-family: 'Prompt', sans-serif;
+    color: #fded05;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cardNameHeader h5 {
+    font-family: 'Prompt', sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+
+}
+
+.cardNameFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    background-color: #1B1F2A;
+
+    border-top-right-radius: 18rem;
+
+    color: #B7DA25;
+}
+
+.cardNameFooter:hover {
+    color: #f6fa03;
+    border: 1px solid #B7DA25;
+}
+
+@media (max-width: 991.98px) {
+    body {
+
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center top;
+
+    }
+
+    .cardFutbol {
+        flex-direction: column;
+        min-height: 80vh;
+        min-width: 80vw;
+
+    }
+
+    .cardClubes {
+        flex: 1;
+        border: 1px solid red;
+        flex-direction: row;
+
+    }
+
+    .escudos {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex: auto;
+        border-radius: 0;
+    }
+
+    .escudo {
+        margin: 0;
+
+    }
+
+    /* .escudo img {
+    } */
+
+    .containerLinea {
+
+        display: none;
+
+    }
+
+    .linea {
+        display: none;
+    }
+
+    .linea2 {
+        display: none;
+    }
+
+    .cardImagen {
+        flex: 8;
+        z-index: 5;
+
+        position: relative;
+
+    }
+
+    .cardImagen img {
+        position: absolute;
+        z-index: 1000;
+        left: 3rem;
+
+    }
+
+    .cardName {
+        flex: 1;
+        flex-direction: row;
+        border-radius: 0;
+    }
+
+    .cardNameHeader {
+        flex: 1;
+        border-radius: 0;
+    }
+
+    .cardNameFooter {
+        flex: 1;
+        border-radius: 0;
+
+    }
+
+
+}
