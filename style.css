@@ -25,7 +25,6 @@ video {
 .videos {
     padding: 1rem;
     background-color: #1B1F2A;
-    border: 5px solid #B7DA25;
     border-radius: 2rem;
 }
 
@@ -47,7 +46,6 @@ header {
 
 .containerHeaderMain {
     display: flex;
-    border: 2px solid lawngreen;
 
 }
 
@@ -70,7 +68,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: end;
-    border: 1px solid red;
 
 }
 
@@ -186,7 +183,6 @@ footer {
 
     .containerHeaderMain {
         flex-direction: column;
-        border: 2px solid rgb(252, 0, 147);
 
     }
 
@@ -199,27 +195,29 @@ footer {
         width: 75vw;
         height: 70vh;
         aspect-ratio: 18/9;
-        border: 3px solid rgb(126, 253, 7);
 
 
     }
 
     .mainLeft {
         flex: 3;
-        border: 3px solid yellow;
     }
 
     .mainRigth {
         justify-content: center;
         align-items: center;
-        border: 2px solid black;
 
 
 
     }
 
     .redes {
-        display: flex;
+        flex-direction: row;
+        margin: 0.5rem;
+        padding: 0.5rem;
+
+        min-height: 3rem;
+
     }
 
     .galleria2 {
