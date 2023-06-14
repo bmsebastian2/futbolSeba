@@ -118,9 +118,9 @@ figcaption {
 .cardImagen img {
     position: absolute;
     z-index: 1000;
-    width: 13rem;
+    width: 16rem;
     height: 98vh;
-    left: 1rem;
+    left: 1.5rem;
 }
 
 .cardName {
