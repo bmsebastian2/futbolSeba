@@ -4,7 +4,7 @@ const { width, height } = wrapper.getBoundingClientRect();
 const halfWidth = width / 2;
 const halfHeight = height / 2;
 
-if (window.innerWidth <= 768) {
+if (window.innerWidth <= 968) {
   window.addEventListener("deviceorientation", handleOrientation, true);
 
   function handleOrientation(event) {
