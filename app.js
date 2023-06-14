@@ -5,9 +5,11 @@ const halfWidth = width / 2;
 const halfHeight = height / 2;
 
 if (window.innerWidth <= 768) {
+  window.addEventListener("deviceorientation", handleOrientation, true);
+
   function handleOrientation(event) {
     ticket.style.transition = "none";
-    const absolute = event.absolute;
+    // const absolute = event.absolute;
     // const alpha = event.alpha;
     const x = event.beta;
     const y = event.gamma;
@@ -15,9 +17,8 @@ if (window.innerWidth <= 768) {
     const roX = ((x - halfWidth) / halfWidth) * 10;
     const roY = ((y - halfHeight) / halfHeight) * 10;
 
-    ticket.style.transform = `rotateX(${roY}deg) rotateY(${roX}deg) `;
+    ticket.style.transform = `rotateX(${roX}deg) rotateY(${roY}deg) `;
   }
-  window.addEventListener("deviceorientation", handleOrientation, true);
 } else {
   window.addEventListener("mousemove", (event) => {
     ticket.style.transition = "none";
