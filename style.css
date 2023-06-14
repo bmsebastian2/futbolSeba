@@ -45,6 +45,12 @@ header {
 
 }
 
+.containerHeaderMain {
+    display: flex;
+    border: 2px solid lawngreen;
+
+}
+
 main {
     min-height: 600vh;
     padding: 5rem 8rem;
@@ -64,6 +70,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: end;
+    border: 1px solid red;
 
 }
 
@@ -151,7 +158,7 @@ li {
 }
 
 footer {
-    min-height: 50vh;
+    min-height: 25vh;
     background-color: #1B1F2A;
 }
 
@@ -161,22 +168,51 @@ footer {
         background-image: url("public/mobil/Main.jpg");
     }
 
+    main {
+        min-height: 600vh;
+        padding: 1rem;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.nav, li.nav, nav.nav, a.nav {
+        display: none;
+        flex: 0;
+    }
+
+    .containerHeaderMain {
+        flex-direction: column;
+        border: 2px solid rgb(252, 0, 147);
+
+    }
+
     .mainHeader {
         flex-direction: column;
 
     }
 
     .ticket {
-        width: 80vw;
-        height: 80vh;
+        width: 75vw;
+        height: 70vh;
         aspect-ratio: 18/9;
+        border: 3px solid rgb(126, 253, 7);
 
 
+    }
+
+    .mainLeft {
+        flex: 3;
+        border: 3px solid yellow;
     }
 
     .mainRigth {
         justify-content: center;
         align-items: center;
+        border: 2px solid black;
 
 
 
@@ -184,6 +220,12 @@ footer {
 
     .redes {
         display: flex;
+    }
+
+    .galleria2 {
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+
     }
 
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/styleCard.css">
     <link rel="stylesheet" href="actualidad.css">
+    <link rel="stylesheet" href="footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a3f8e52a2a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -25,7 +27,7 @@
 
             <ul>
 
-                <li style="color:white"><a href="">Acerca de mí</a> </li>
+                <li><a href="">Acerca de mí</a> </li>
                 <li><a href="">Galleria</a></li>
                 <li><a href="">Videos</a></li>
             </ul>
@@ -33,7 +35,8 @@
 
         </nav>
 
-        <div style="display: flex;">
+        <div class="containerHeaderMain">
+
             <div class="mainLeft">
 
 
@@ -112,9 +115,6 @@
 
             </div>
 
-
-
-
             <div class="mainRigth">
                 <div class="redes">
                     <div class="red">
@@ -165,7 +165,7 @@
         <div class="container text-center galleria">
             <h2 class="m-5 f-1">Un poco de historia..🧭</h2>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-7 col-xs-12">
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -212,7 +212,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-4 col-xs-12">
                     <figure>
                         <img src="/media/Dryco.jpg" class="w-75 m-1" alt="...">
                         <img src="/media/grupoNacionaChicosW (1).webp" class="w-75" alt="...">
@@ -240,7 +240,7 @@
             <div class="col galleria2">
                 <h2 class="m-5 f-1">2021/22..✔</h2>
                 <div class="row flex justify-content-center align-items-center">
-                    <div class="col">
+                    <div class="col-lg-4 col-xs-12">
                         <div class="row">
                             <img src="/media/ContraPeñarol2w (1).webp" alt="...">
 
@@ -252,8 +252,8 @@
                         </div>
 
                     </div>
-                    <div class="col">
-                        <img src="/media/contrapeñarolw (1).webp" alt="...">
+                    <div class="col-lg-8 col-xs-12">
+                        <img class="img-fluid" src="/media/contrapeñarolw (1).webp" alt="...">
                     </div>
 
 
@@ -265,10 +265,10 @@
         </div>
 
 
-        <h2 class="m-5 f-1">JUGADOR:</h2>
+        <h2 class="m-5 f-1 text-center text-lg-start">JUGADOR:</h2>
         <div class="container text-center">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 col-xs-12">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -335,16 +335,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-xs-12">
                     <img src="/media/[removal 4Prueba.jpg" class="img-fluid " alt="...">
                 </div>
 
             </div>
         </div>
 
-        <div class="container text-center videos m-5">
+        <div class="container text-center videos m-lg-5 m-xs-1">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 col-xs-12">
                     <h3>Videos menos de 10s</h3><small>Con Nacional Numero <strong>15</strong> </small>
                     <div class="row">
                         <video src="/media/C.mp4" width=”340” height=”280” controls preload />
@@ -358,7 +358,7 @@
 
 
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-xs-12">
                     <h3>Compilación menos 2 min</h3><small>Con Nacional Numero<strong> 15 </strong> Progreso
                         <strong>7</strong>
                     </small>
@@ -388,11 +388,11 @@
         <div class="col galleria2">
             <h2 class="m-5 f-1">2022..✔</h2>
             <div class="row flex justify-content-center align-items-center">
-                <div class="col">
-                    <img src="/media/pateandoW (1).webp" alt="...">
+                <div class="col-lg-8 col-xs-12">
+                    <img class="img-fluid" src="/media/pateandoW (1).webp" alt="...">
                 </div>
 
-                <div class="col">
+                <div class="col-lg-4 col-xs-12">
                     <div class="row">
                         <img src="/media/cambiodepie (1).webp" alt="...">
 
@@ -457,7 +457,37 @@
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <section class="contact-area" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="contact-content text-center">
+                            <a href="#"><img src="/media/Logo_M.png" alt="logo"></a>
+                            <h4>Diseño Web</h4>
+                            <div class="hr"></div>
+                            <h6>Montevideo 11800, Uruguay.</h6>
+                            <h6>+598 98 046 651</h6>
+                            <div class="contact-social">
+                                <ul>
+                                    <li><a class="hover-target" href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+
+                                    <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fa-solid fa-code"></i></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============== 1.9 Contact Area End ====================-->
+        <!-- =============== 1.9 Footer Area Start ====================-->
+        <footer>
+            <p>Copyright &copy; 2019 All Rights Reserved.
+            </p>
+        </footer>
+    </footer>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

@@ -4,6 +4,16 @@ const { width, height } = wrapper.getBoundingClientRect();
 const halfWidth = width / 2;
 const halfHeight = height / 2;
 
+window.addEventListener("deviceorientation", handleOrientation, true);
+function handleOrientation(event) {
+  const absolute = event.absolute;
+  const alpha = event.alpha;
+  const beta = event.beta;
+  const gamma = event.gamma;
+
+  console.log(absolute);
+}
+
 window.addEventListener("mousemove", (event) => {
   ticket.style.transition = "none";
   const { pageX, pageY } = event;
