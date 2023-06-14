@@ -34,7 +34,7 @@ video {
 
 
 header {
-    min-height: 120vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     background-size: 100% 100%;
