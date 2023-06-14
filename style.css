@@ -34,13 +34,13 @@ video {
 
 
 header {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("public/main.jpg");
-    border-bottom: 7rem solid #1B1F2A;
+    border-bottom: 9rem solid #1B1F2A;
 
 }
 
