@@ -22,7 +22,9 @@ if (window.innerWidth <= 768) {
     const roX = ((x - halfWidth) / halfWidth) * 10;
     const roY = ((y - halfHeight) / halfHeight) * 10;
 
-    ticket.style.transform = `rotateX(${posX}deg) rotateY(${posY}deg) `;
+    // ticket.style.transform = `rotateX(${posX}deg) rotateY(${posY}deg) `;
+    ticket.style.transform =
+      "translate(" + posX + "px, " + posY + "px) rotate(" + x * 2 + "deg)";
   }
 } else {
   window.addEventListener("mousemove", (event) => {
