@@ -9,8 +9,8 @@ if (window.innerWidth <= 968) {
     window.addEventListener("devicemotion", handleMotion);
 
     function handleMotion(event) {
-      const ax = Math.round(event.accelerationIncludingGravity.x);
-      const ay = Math.round(event.accelerationIncludingGravity.y);
+      const ax = event.accelerationIncludingGravity.x;
+      const ay = event.accelerationIncludingGravity.y;
       ticket.style.transition = "none";
 
       ticket.style.transform = `rotateX(${ay * 4}deg) rotateY(${ax * 4}deg)`;
