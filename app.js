@@ -28,7 +28,7 @@ if (window.innerWidth <= 968) {
     const rotationX = ((pageX - halfWidth) / halfWidth) * 10;
     const rotationY = ((pageY - halfHeight) / halfHeight) * 10;
 
-    ticket.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg) `;
+    ticket.style.transform = `rotateX(${rotationY}deg) rotateY(${rotationX}deg) `;
   });
   window.addEventListener("mouseleave", () => {
     ticket.style.transition = "transform .5s ease-in-out";
