@@ -5,27 +5,7 @@ const halfWidth = width / 2;
 const halfHeight = height / 2;
 
 if (window.innerWidth <= 968) {
-  window.addEventListener("deviceorientation", handleOrientation, true);
-
-  function handleOrientation(event) {
-    ticket.style.transition = "none";
-    // const absolute = event.absolute;
-    // const alpha = event.alpha;
-    const y = event.beta;
-    const x = event.gamma;
-    var windowWidth = window.innerWidth;
-    var maxX = windowWidth - cuadrado.offsetWidth;
-    var maxY = windowHeight - cuadrado.offsetHeight;
-    var posX = (x / 90) * maxX; // Movimiento en el eje X
-    var posY = (y / 90) * maxY; // Movimiento en el eje Y
-
-    const roX = ((x - halfWidth) / halfWidth) * 10;
-    const roY = ((y - halfHeight) / halfHeight) * 10;
-
-    // ticket.style.transform = `rotateX(${posX}deg) rotateY(${posY}deg) `;
-    ticket.style.transform =
-      "translate(" + posX + "px, " + posY + "px) rotate(" + x * 2 + "deg)";
-  }
+  alert("device");
 } else {
   window.addEventListener("mousemove", (event) => {
     ticket.style.transition = "none";
